@@ -1,0 +1,351 @@
+/*==================================================
+PROJECT GOLDLIGHT
+Disco Box Entertainments
+
+Version 0.5 – First Light
+==================================================*/
+
+/*--------------------------------------------------
+RESET
+--------------------------------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/*--------------------------------------------------
+COLOUR PALETTE
+--------------------------------------------------*/
+
+:root{
+
+    --background:#050505;
+    --gold:#d4af37;
+    --gold-light:#f4dd86;
+    --white:#ffffff;
+    --text:#e8e8e8;
+
+}
+
+/*--------------------------------------------------
+BODY
+--------------------------------------------------*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--white);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/*--------------------------------------------------
+MAIN HERO
+--------------------------------------------------*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 25px;
+
+}
+
+.hero-content{
+
+    max-width:1100px;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+/*--------------------------------------------------
+LOGO
+--------------------------------------------------*/
+
+.hero-logo{
+
+    width:min(450px,90vw);
+
+    display:block;
+
+    margin:0 auto 45px auto;
+
+}
+
+/*--------------------------------------------------
+HEADINGS
+--------------------------------------------------*/
+
+h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+h2{
+
+    font-size:1.45rem;
+
+    font-weight:400;
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    margin:35px auto;
+
+}
+
+h3{
+
+    color:var(--gold);
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+}
+
+/*--------------------------------------------------
+TEXT
+--------------------------------------------------*/
+
+.intro{
+
+    font-size:1.25rem;
+
+    opacity:.9;
+
+    margin-bottom:20px;
+
+}
+
+.message{
+
+    color:var(--gold);
+
+    font-style:italic;
+
+    margin-bottom:20px;
+
+}
+
+/*--------------------------------------------------
+SERVICES
+--------------------------------------------------*/
+
+.services{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:50px 0;
+
+}
+
+.services span{
+
+    border:1px solid rgba(212,175,55,.35);
+
+    border-radius:30px;
+
+    padding:12px 22px;
+
+    color:var(--gold);
+
+    background:rgba(255,255,255,.03);
+
+}
+/*--------------------------------------------------
+CONTACT CARD
+--------------------------------------------------*/
+
+.contact{
+
+    max-width:700px;
+
+    margin:80px auto 60px;
+
+    padding:45px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(8px);
+
+}
+
+.contact p{
+
+    margin:15px 0;
+
+    line-height:1.8;
+
+}
+
+.contact a{
+
+    color:var(--white);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contact a:hover{
+
+    color:var(--gold);
+
+}
+
+/*--------------------------------------------------
+BUTTONS
+--------------------------------------------------*/
+
+.buttons{
+
+    margin-top:20px;
+
+}
+
+.buttons a{
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:16px 36px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.button-primary{
+
+    background:linear-gradient(
+        to bottom,
+        var(--gold-light),
+        var(--gold)
+    );
+
+    color:#111;
+
+}
+
+.button-secondary{
+
+    border:2px solid var(--gold);
+
+    color:var(--gold);
+
+}
+
+.buttons a:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/*--------------------------------------------------
+FOOTER
+--------------------------------------------------*/
+
+.footer{
+
+    margin-top:45px;
+
+    opacity:.65;
+
+    letter-spacing:2px;
+
+    font-size:.95rem;
+
+}
+
+/*--------------------------------------------------
+RESPONSIVE
+--------------------------------------------------*/
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:2.2rem;
+
+    }
+
+    h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .hero-logo{
+
+        width:300px;
+
+    }
+
+    .services{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .buttons a{
+
+        display:block;
+
+        width:100%;
+
+        max-width:320px;
+
+        margin:12px auto;
+
+    }
+
+}
